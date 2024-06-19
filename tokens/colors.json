@@ -1,0 +1,253 @@
+{
+  "color": {
+    "border": {
+      "neutral-faded": {
+        "value": "#eceef3ff",
+        "type": "color"
+      },
+      "positive": {
+        "value": "#007a1cff",
+        "type": "color",
+        "comment": "Positive border color."
+      },
+      "neutral": {
+        "value": "#e6e8efff",
+        "type": "color",
+        "comment": "Default border used for outlining elements."
+      },
+      "secondary": {
+        "value": "#874ce6ff",
+        "type": "color",
+        "comment": "Secondary border color."
+      },
+      "focus": {
+        "value": "#5292ffff",
+        "type": "color",
+        "comment": "Border color for focus states."
+      },
+      "secondary-faded": {
+        "value": "#d9c8f5ff",
+        "type": "color",
+        "comment": "Secondary positive border color."
+      },
+      "primary": {
+        "value": "#014ee1ff",
+        "type": "color",
+        "comment": "Primary border color."
+      },
+      "primary-faded": {
+        "value": "#d1e2ffff",
+        "type": "color",
+        "comment": "Subtle primary border color."
+      },
+      "positive-faded": {
+        "value": "#b4e9c5ff",
+        "type": "color",
+        "comment": "Subtle positive border color."
+      }
+    },
+    "foreground": {
+      "neutral": {
+        "value": "#000000ff",
+        "type": "color",
+        "comment": "Neutral foreground color. Use for icons and text."
+      },
+      "neutral-faded": {
+        "value": "#606981ff",
+        "type": "color",
+        "comment": "Subtle foreground color. Use for secondary or placeholder text."
+      },
+      "primary": {
+        "value": "#104fc6ff",
+        "type": "color"
+      },
+      "secondary": {
+        "value": "#874ce6ff",
+        "type": "color",
+        "comment": "Primary foreground color. Use for accent components and text."
+      },
+      "disabled": {
+        "value": "#c6ccdbff",
+        "type": "color",
+        "comment": "Use for disabled foreground components and text."
+      },
+      "positive": {
+        "value": "#007a1cff",
+        "type": "color",
+        "comment": "Positive foreground color. Use for positive components and text (i.e. Success message)"
+      }
+    },
+    "background": {
+      "page": {
+        "value": "#ffffffff",
+        "type": "color",
+        "comment": "Primary background for pages."
+      },
+      "secondary": {
+        "value": "#874ce6ff",
+        "type": "color",
+        "comment": "Background for components using a secondary (accent) color."
+      },
+      "neutral": {
+        "value": "#f6f7f9ff",
+        "type": "color",
+        "comment": "Secondary (alternate) background for pages or other components."
+      },
+      "secondary-highlighted": {
+        "value": "#a275eaff",
+        "type": "color",
+        "comment": "Highlighted background for components using a secondary color, for example, a hover state."
+      },
+      "secondary-faded": {
+        "value": "#f5f2fdff",
+        "type": "color",
+        "comment": "Light background for components used with secondary color. Can be combined with Foreground / Secondary."
+      },
+      "primary": {
+        "value": "#014ee1ff",
+        "type": "color",
+        "comment": "Background for primary components."
+      },
+      "positive": {
+        "value": "#007a1cff",
+        "type": "color",
+        "comment": "Background for components used with a positive semantic meaning."
+      },
+      "primary-highlighted": {
+        "value": "#1062feff",
+        "type": "color",
+        "comment": "Highlighted background for primary components, for example, a hover state."
+      },
+      "positive-highlighted": {
+        "value": "#35a24fff",
+        "type": "color",
+        "comment": "Highlighted background for positive components, for example, a hover state."
+      },
+      "primary-faded": {
+        "value": "#ecf5ffff",
+        "type": "color",
+        "comment": "Light background for primary components. Can be combined with Foreground / Primary."
+      },
+      "positive-faded": {
+        "value": "#ebfef6ff",
+        "type": "color",
+        "comment": "Light background for components used with a positive semantic meaning. Can be combined with Foreground / Positive."
+      },
+      "blur": {
+        "value": "#ffffffcc",
+        "type": "color",
+        "comment": "For use in combination with Blur tokens."
+      },
+      "blur-neutral": {
+        "value": "#606981cc",
+        "type": "color",
+        "comment": "For use in combination with Blur tokens."
+      }
+    },
+    "base": {
+      "green": {
+        "200": {
+          "value": "#ebfef6ff",
+          "type": "color"
+        },
+        "300": {
+          "value": "#b4e9c5ff",
+          "type": "color"
+        },
+        "500": {
+          "value": "#6ac883ff",
+          "type": "color"
+        },
+        "600": {
+          "value": "#35a24fff",
+          "type": "color"
+        },
+        "700": {
+          "value": "#007a1cff",
+          "type": "color"
+        }
+      },
+      "blue": {
+        "200": {
+          "value": "#ecf5ffff",
+          "type": "color"
+        },
+        "300": {
+          "value": "#d1e2ffff",
+          "type": "color"
+        },
+        "500": {
+          "value": "#5292ffff",
+          "type": "color"
+        },
+        "600": {
+          "value": "#1062feff",
+          "type": "color"
+        },
+        "700": {
+          "value": "#014ee1ff",
+          "type": "color"
+        }
+      },
+      "gray": {
+        "200": {
+          "value": "#f6f7f9ff",
+          "type": "color"
+        },
+        "300": {
+          "value": "#e6e8efff",
+          "type": "color"
+        },
+        "500": {
+          "value": "#c6ccdbff",
+          "type": "color"
+        },
+        "600": {
+          "value": "#7f8594ff",
+          "type": "color"
+        },
+        "700": {
+          "value": "#606981ff",
+          "type": "color"
+        }
+      },
+      "purple": {
+        "200": {
+          "value": "#f5f2fdff",
+          "type": "color"
+        },
+        "300": {
+          "value": "#d9c8f5ff",
+          "type": "color"
+        },
+        "500": {
+          "value": "#be9ff0ff",
+          "type": "color"
+        },
+        "600": {
+          "value": "#a275eaff",
+          "type": "color"
+        },
+        "700": {
+          "value": "#874ce6ff",
+          "type": "color"
+        }
+      },
+      "white": {
+        "value": "#ffffffff",
+        "type": "color"
+      },
+      "black": {
+        "value": "#000000ff",
+        "type": "color"
+      }
+    },
+    "on-background": {
+      "primary": {
+        "value": "#ffffffff",
+        "type": "color",
+        "comment": "To be used on Primary and Primary Highlighted background colors."
+      }
+    }
+  }
+}
