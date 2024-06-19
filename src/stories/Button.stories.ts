@@ -51,10 +51,18 @@ export const Small: Story = {
   },
 };
 
+export const Error: Story = {
+  args: {
+    primary: true,
+    label: 'Error message',
+    backgroundColor: 'red',
+  }
+};
+
 export const Warning: Story = {
   args: {
     primary: true,
-    label: 'Delete now',
-    backgroundColor: 'red',
+    label: 'Warning message',
+    backgroundColor: 'orange',
   }
 };
