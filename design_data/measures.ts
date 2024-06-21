@@ -1,14 +1,14 @@
-const dimensionFontTextSizeSizeJumbo = {
+const dimensionFontTextSizeJumbo = {
           measure: 180,
           unit: "Pixels",
           css: "180px"
          };
-const dimensionFontTextSizeSizeH1 = {
+const dimensionFontTextSizeH1 = {
           measure: 60,
           unit: "Pixels",
           css: "60px"
          };
-const dimensionFontTextSizeSizeH2 = {
+const dimensionFontTextSizeH2 = {
           measure: 42,
           unit: "Pixels",
           css: "42px"
@@ -43,50 +43,50 @@ const dimensionFontTextSizeLabel = {
           unit: "Pixels",
           css: "14px"
          };
-const dimensionFontLineHeightHeightJumbo = {
+const dimensionFontLineHeightJumbo = {
           measure: 200,
           unit: "Pixels",
           css: "200px"
          };
 const dimensionFontLineHeightH1 = {
-          measure: 40,
+          measure: 60,
           unit: "Pixels",
-          css: "40px"
+          css: "60px"
          };
 const dimensionFontLineHeightH2 = {
-          measure: 36,
+          measure: 46,
           unit: "Pixels",
-          css: "36px"
+          css: "46px"
          };
 const dimensionFontLineHeightH3 = {
-          measure: 30,
-          unit: "Pixels",
-          css: "30px"
-         };
-const dimensionFontLineHeightH4 = {
           measure: 40,
           unit: "Pixels",
           css: "40px"
          };
-const dimensionFontLineHeightH5 = {
+const dimensionFontLineHeightH4 = {
           measure: 36,
           unit: "Pixels",
           css: "36px"
          };
-const dimensionFontLineHeightH6 = {
+const dimensionFontLineHeightH5 = {
           measure: 30,
           unit: "Pixels",
           css: "30px"
          };
-const dimensionFontLineHeightBody = {
-          measure: 26,
+const dimensionFontLineHeightH6 = {
+          measure: 28,
           unit: "Pixels",
-          css: "26px"
+          css: "28px"
+         };
+const dimensionFontLineHeightBody = {
+          measure: 24,
+          unit: "Pixels",
+          css: "24px"
          };
 const dimensionFontLineHeightLabel = {
-          measure: 0,
+          measure: 20,
           unit: "Pixels",
-          css: "0px"
+          css: "20px"
          };
 const dimensionFontLetterSpacingH1 = {
           measure: 0,
@@ -108,87 +108,87 @@ const dimensionFontLetterSpacingBody = {
           unit: "Pixels",
           css: "0px"
          };
-const dimensionSpacingSpace0 = {
+const dimensionSpacing0 = {
           measure: 0,
           unit: "Pixels",
           css: "0px"
          };
-const dimensionSpacingSpace025 = {
+const dimensionSpacing025 = {
           measure: 1,
           unit: "Pixels",
           css: "1px"
          };
-const dimensionSpacingSpace050 = {
+const dimensionSpacing050 = {
           measure: 2,
           unit: "Pixels",
           css: "2px"
          };
-const dimensionSpacingSpace100 = {
+const dimensionSpacing100 = {
           measure: 4,
           unit: "Pixels",
           css: "4px"
          };
-const dimensionSpacingSpace150 = {
+const dimensionSpacing150 = {
           measure: 6,
           unit: "Pixels",
           css: "6px"
          };
-const dimensionSpacingSpace200 = {
+const dimensionSpacing200 = {
           measure: 8,
           unit: "Pixels",
           css: "8px"
          };
-const dimensionSpacingSpace300 = {
+const dimensionSpacing300 = {
           measure: 12,
           unit: "Pixels",
           css: "12px"
          };
-const dimensionSpacingSpace400 = {
+const dimensionSpacing400 = {
           measure: 16,
           unit: "Pixels",
           css: "16px"
          };
-const dimensionSpacingSpace500 = {
+const dimensionSpacing500 = {
           measure: 20,
           unit: "Pixels",
           css: "20px"
          };
-const dimensionSpacingSpace600 = {
+const dimensionSpacing600 = {
           measure: 24,
           unit: "Pixels",
           css: "24px"
          };
-const dimensionSpacingSpace800 = {
+const dimensionSpacing800 = {
           measure: 32,
           unit: "Pixels",
           css: "32px"
          };
-const dimensionSpacingSpace1000 = {
+const dimensionSpacing1000 = {
           measure: 40,
           unit: "Pixels",
           css: "40px"
          };
-const dimensionSpacingSpace1200 = {
+const dimensionSpacing1200 = {
           measure: 48,
           unit: "Pixels",
           css: "48px"
          };
-const dimensionSpacingSpace1600 = {
+const dimensionSpacing1600 = {
           measure: 64,
           unit: "Pixels",
           css: "64px"
          };
-const dimensionSpacingSpace2000 = {
+const dimensionSpacing2000 = {
           measure: 80,
           unit: "Pixels",
           css: "80px"
          };
-const dimensionSpacingSpace2400 = {
+const dimensionSpacing2400 = {
           measure: 96,
           unit: "Pixels",
           css: "96px"
          };
-const dimensionSpacingSpace3200 = {
+const dimensionSpacing3200 = {
           measure: 128,
           unit: "Pixels",
           css: "128px"
@@ -225,16 +225,16 @@ const dimensionBreakpointXl = {
          };
 
 export const Measures = {
-      dimensionFontTextSizeSizeJumbo,
-      dimensionFontTextSizeSizeH1,
-      dimensionFontTextSizeSizeH2,
+      dimensionFontTextSizeJumbo,
+      dimensionFontTextSizeH1,
+      dimensionFontTextSizeH2,
       dimensionFontTextSizeH3,
       dimensionFontTextSizeH4,
       dimensionFontTextSizeH5,
       dimensionFontTextSizeH6,
       dimensionFontTextSizeBody,
       dimensionFontTextSizeLabel,
-      dimensionFontLineHeightHeightJumbo,
+      dimensionFontLineHeightJumbo,
       dimensionFontLineHeightH1,
       dimensionFontLineHeightH2,
       dimensionFontLineHeightH3,
@@ -247,23 +247,23 @@ export const Measures = {
       dimensionFontLetterSpacingH2,
       dimensionFontLetterSpacingH3,
       dimensionFontLetterSpacingBody,
-      dimensionSpacingSpace0,
-      dimensionSpacingSpace025,
-      dimensionSpacingSpace050,
-      dimensionSpacingSpace100,
-      dimensionSpacingSpace150,
-      dimensionSpacingSpace200,
-      dimensionSpacingSpace300,
-      dimensionSpacingSpace400,
-      dimensionSpacingSpace500,
-      dimensionSpacingSpace600,
-      dimensionSpacingSpace800,
-      dimensionSpacingSpace1000,
-      dimensionSpacingSpace1200,
-      dimensionSpacingSpace1600,
-      dimensionSpacingSpace2000,
-      dimensionSpacingSpace2400,
-      dimensionSpacingSpace3200,
+      dimensionSpacing0,
+      dimensionSpacing025,
+      dimensionSpacing050,
+      dimensionSpacing100,
+      dimensionSpacing150,
+      dimensionSpacing200,
+      dimensionSpacing300,
+      dimensionSpacing400,
+      dimensionSpacing500,
+      dimensionSpacing600,
+      dimensionSpacing800,
+      dimensionSpacing1000,
+      dimensionSpacing1200,
+      dimensionSpacing1600,
+      dimensionSpacing2000,
+      dimensionSpacing2400,
+      dimensionSpacing3200,
       dimensionBreakpointInitial,
       dimensionBreakpointXs,
       dimensionBreakpointSm,
