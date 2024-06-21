@@ -200,6 +200,111 @@ const bodyDefaultWeightSemibold = {
                         css: "0px"
                        },
          };
+const h1 = {
+           fontFamily: "Value Sans Pro",
+           fontStyle: "normal",
+           fontWeight: 500,
+           fontSize: {
+                      measure: 36,
+                      unit: "Pixels",
+                      css: "36px"
+                     },
+           letterSpacing: {
+                             measure: -4,
+                             unit: "Percent",
+                             css: "-4%"
+                            },
+           textIndent: {
+                        measure: 0,
+                        unit: "Pixels",
+                        css: "0px"
+                       },
+         };
+const h2 = {
+           fontFamily: "Value Sans Pro",
+           fontStyle: "normal",
+           fontWeight: 500,
+           fontSize: {
+                      measure: 28,
+                      unit: "Pixels",
+                      css: "28px"
+                     },
+           letterSpacing: {
+                             measure: -4,
+                             unit: "Percent",
+                             css: "-4%"
+                            },
+           textIndent: {
+                        measure: 0,
+                        unit: "Pixels",
+                        css: "0px"
+                       },
+         };
+const h3 = {
+           fontFamily: "Value Sans Pro",
+           fontStyle: "normal",
+           fontWeight: 500,
+           fontSize: {
+                      measure: 24,
+                      unit: "Pixels",
+                      css: "24px"
+                     },
+           letterSpacing: {
+                             measure: -4,
+                             unit: "Percent",
+                             css: "-4%"
+                            },
+           textIndent: {
+                        measure: 0,
+                        unit: "Pixels",
+                        css: "0px"
+                       },
+         };
+const body = {
+           fontFamily: "Value Sans Pro",
+           fontStyle: "normal",
+           fontWeight: 500,
+           fontSize: {
+                      measure: 18,
+                      unit: "Pixels",
+                      css: "18px"
+                     },
+           letterSpacing: {
+                             measure: -4,
+                             unit: "Percent",
+                             css: "-4%"
+                            },
+           textIndent: {
+                        measure: 0,
+                        unit: "Pixels",
+                        css: "0px"
+                       },
+         };
+const h1Test = {
+           fontFamily: "JetBrains Mono",
+           fontStyle: "normal",
+           fontWeight: 450,
+           fontSize: {
+                      measure: 13.5410327911377,
+                      unit: "Pixels",
+                      css: "13.5410327911377px"
+                     },
+           lineHeight: {
+                          measure: 19.3443,
+                          unit: "Pixels",
+                          css: "19.3443px"
+                         },
+           letterSpacing: {
+                             measure: 0,
+                             unit: "Percent",
+                             css: "0%"
+                            },
+           textIndent: {
+                        measure: 0,
+                        unit: "Pixels",
+                        css: "0px"
+                       },
+         };
 
 
 export const Typographies = {
@@ -212,4 +317,9 @@ export const Typographies = {
       bodyBody1,
   /** Default text for everything */
       bodyDefaultWeightSemibold,
+      h1,
+      h2,
+      h3,
+      body,
+      h1Test,
 }

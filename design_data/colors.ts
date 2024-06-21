@@ -49,6 +49,44 @@ const baseGreen600 = "#35a24f";
 const backgroundBlur = "#ffffffcc";
 const backgroundBlurNeutral = "#606981cc";
 const onBackgroundPrimary = "#ffffff";
+const colorsBaseColorsWhite = "#ffffff";
+const colorsBaseColorsBlack = "#000000";
+const colorsTealTeal100 = "#e0fffb";
+const colorsTealTeal200 = "#bffff7";
+const colorsTealTeal300 = "#80fff0";
+const colorsTealTeal400 = "#00ffe0";
+const colorsTealTeal500 = "#00c7af";
+const colorsTealTeal600 = "#009986";
+const colorsTealTeal700 = "#007163";
+const colorsTealTeal800 = "#00332d";
+const colorsTealTeal900 = "#000000";
+const colorsGrayGray900 = "#151515";
+const colorsGrayGray800 = "#303030";
+const colorsGrayGray700 = "#4a4a4a";
+const colorsGrayGray600 = "#8a8a8a";
+const colorsGrayGray500 = "#b5b5b5";
+const colorsGrayGray400 = "#cccccc";
+const colorsGrayGray300 = "#e3e3e3";
+const colorsGrayGray200 = "#ebebeb";
+const colorsGrayGray100 = "#f1f1f1";
+const colorsMagentaMagenta900 = "#40003d";
+const colorsMagentaMagenta800 = "#80007a";
+const colorsMagentaMagenta700 = "#ff00f5";
+const colorsMagentaMagenta600 = "#ff33f7";
+const colorsMagentaMagenta500 = "#ff66f9";
+const colorsMagentaMagenta400 = "#ff99fb";
+const colorsMagentaMagenta300 = "#ffccfd";
+const colorsMagentaMagenta200 = "#ffdbfe";
+const colorsMagentaMagenta100 = "#ffedfe";
+const colorsPurplePurple900 = "#300066";
+const colorsPurplePurple800 = "#490099";
+const colorsPurplePurple700 = "#7900ff";
+const colorsPurplePurple600 = "#9433ff";
+const colorsPurplePurple500 = "#af66ff";
+const colorsPurplePurple400 = "#c999ff";
+const colorsPurplePurple300 = "#dabaff";
+const colorsPurplePurple200 = "#e4ccff";
+const colorsPurplePurple100 = "#f4ebff";
 
 export const Colors = {
     baseGreen700,
@@ -129,4 +167,42 @@ export const Colors = {
     backgroundBlurNeutral,
   /** To be used on Primary and Primary Highlighted background colors. */
     onBackgroundPrimary,
+    colorsBaseColorsWhite,
+    colorsBaseColorsBlack,
+    colorsTealTeal100,
+    colorsTealTeal200,
+    colorsTealTeal300,
+    colorsTealTeal400,
+    colorsTealTeal500,
+    colorsTealTeal600,
+    colorsTealTeal700,
+    colorsTealTeal800,
+    colorsTealTeal900,
+    colorsGrayGray900,
+    colorsGrayGray800,
+    colorsGrayGray700,
+    colorsGrayGray600,
+    colorsGrayGray500,
+    colorsGrayGray400,
+    colorsGrayGray300,
+    colorsGrayGray200,
+    colorsGrayGray100,
+    colorsMagentaMagenta900,
+    colorsMagentaMagenta800,
+    colorsMagentaMagenta700,
+    colorsMagentaMagenta600,
+    colorsMagentaMagenta500,
+    colorsMagentaMagenta400,
+    colorsMagentaMagenta300,
+    colorsMagentaMagenta200,
+    colorsMagentaMagenta100,
+    colorsPurplePurple900,
+    colorsPurplePurple800,
+    colorsPurplePurple700,
+    colorsPurplePurple600,
+    colorsPurplePurple500,
+    colorsPurplePurple400,
+    colorsPurplePurple300,
+    colorsPurplePurple200,
+    colorsPurplePurple100,
 }
