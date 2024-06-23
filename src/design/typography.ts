@@ -25,81 +25,6 @@ const headingHeading2 = {
                         css: "0px"
                        },
          };
-const bodySmallWeightSemibold = {
-           fontFamily: "Inter",
-           fontStyle: "normal",
-           fontWeight: 500,
-           fontSize: {
-                      measure: 12,
-                      unit: "Pixels",
-                      css: "12px"
-                     },
-           lineHeight: {
-                          measure: 16,
-                          unit: "Pixels",
-                          css: "16px"
-                         },
-           letterSpacing: {
-                             measure: 0,
-                             unit: "Percent",
-                             css: "0%"
-                            },
-           textIndent: {
-                        measure: 0,
-                        unit: "Pixels",
-                        css: "0px"
-                       },
-         };
-const headingHeading1 = {
-           fontFamily: "Inter",
-           fontStyle: "normal",
-           fontWeight: 600,
-           fontSize: {
-                      measure: 36,
-                      unit: "Pixels",
-                      css: "36px"
-                     },
-           lineHeight: {
-                          measure: 44,
-                          unit: "Pixels",
-                          css: "44px"
-                         },
-           letterSpacing: {
-                             measure: 0,
-                             unit: "Percent",
-                             css: "0%"
-                            },
-           textIndent: {
-                        measure: 0,
-                        unit: "Pixels",
-                        css: "0px"
-                       },
-         };
-const bodyBody1 = {
-           fontFamily: "Inter",
-           fontStyle: "normal",
-           fontWeight: 400,
-           fontSize: {
-                      measure: 16,
-                      unit: "Pixels",
-                      css: "16px"
-                     },
-           lineHeight: {
-                          measure: 24,
-                          unit: "Pixels",
-                          css: "24px"
-                         },
-           letterSpacing: {
-                             measure: 0,
-                             unit: "Percent",
-                             css: "0%"
-                            },
-           textIndent: {
-                        measure: 0,
-                        unit: "Pixels",
-                        css: "0px"
-                       },
-         };
 const bodyBody2 = {
            fontFamily: "Inter",
            fontStyle: "normal",
@@ -175,14 +100,89 @@ const bodyBody3 = {
                         css: "0px"
                        },
          };
+const bodySmallWeightSemibold = {
+           fontFamily: "Inter",
+           fontStyle: "normal",
+           fontWeight: 500,
+           fontSize: {
+                      measure: 12,
+                      unit: "Pixels",
+                      css: "12px"
+                     },
+           lineHeight: {
+                          measure: 16,
+                          unit: "Pixels",
+                          css: "16px"
+                         },
+           letterSpacing: {
+                             measure: 0,
+                             unit: "Percent",
+                             css: "0%"
+                            },
+           textIndent: {
+                        measure: 0,
+                        unit: "Pixels",
+                        css: "0px"
+                       },
+         };
+const headingHeading1 = {
+           fontFamily: "Inter",
+           fontStyle: "normal",
+           fontWeight: 600,
+           fontSize: {
+                      measure: 36,
+                      unit: "Pixels",
+                      css: "36px"
+                     },
+           lineHeight: {
+                          measure: 44,
+                          unit: "Pixels",
+                          css: "44px"
+                         },
+           letterSpacing: {
+                             measure: 0,
+                             unit: "Percent",
+                             css: "0%"
+                            },
+           textIndent: {
+                        measure: 0,
+                        unit: "Pixels",
+                        css: "0px"
+                       },
+         };
+const bodyBody1 = {
+           fontFamily: "Inter",
+           fontStyle: "normal",
+           fontWeight: 400,
+           fontSize: {
+                      measure: 16,
+                      unit: "Pixels",
+                      css: "16px"
+                     },
+           lineHeight: {
+                          measure: 24,
+                          unit: "Pixels",
+                          css: "24px"
+                         },
+           letterSpacing: {
+                             measure: 0,
+                             unit: "Percent",
+                             css: "0%"
+                            },
+           textIndent: {
+                        measure: 0,
+                        unit: "Pixels",
+                        css: "0px"
+                       },
+         };
 
 
 export const Typographies = {
       headingHeading2,
-      bodySmallWeightSemibold,
-      headingHeading1,
-      bodyBody1,
       bodyBody2,
       headingHeading3,
       bodyBody3,
+      bodySmallWeightSemibold,
+      headingHeading1,
+      bodyBody1,
 }
