@@ -273,31 +273,6 @@ const dimensionBorderRadiusFull = {
           unit: "Pixels",
           css: "9999px"
          };
-const borderRadiusBorderNone = {
-          measure: 0,
-          unit: "Pixels",
-          css: "0px"
-         };
-const borderRadiusBorderSm = {
-          measure: 4,
-          unit: "Pixels",
-          css: "4px"
-         };
-const borderRadiusBorderMd = {
-          measure: 12,
-          unit: "Pixels",
-          css: "12px"
-         };
-const borderRadiusBorderLg = {
-          measure: 16,
-          unit: "Pixels",
-          css: "16px"
-         };
-const borderRadiusBorderFull = {
-          measure: 9999,
-          unit: "Pixels",
-          css: "9999px"
-         };
 
 export const Measures = {
       dimensionFontTextSizeJumbo,
@@ -355,9 +330,4 @@ export const Measures = {
       dimensionBorderRadius500,
       dimensionBorderRadius750,
       dimensionBorderRadiusFull,
-      borderRadiusBorderNone,
-      borderRadiusBorderSm,
-      borderRadiusBorderMd,
-      borderRadiusBorderLg,
-      borderRadiusBorderFull,
 }
