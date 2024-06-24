@@ -63,17 +63,39 @@ const colorsYellow600 = "#ca8a04";
 const colorsYellow700 = "#a16207";
 const colorsYellow800 = "#854d0e";
 const colorsYellow900 = "#713f12";
-const textTextColorDefault = colorsGray900;
-const textTextColorLink = colorsMagenta700;
-const textTextColorLinkHover = colorsMagenta800;
-const textTextColorInfo = colorsPurple700;
-const textTextColorInfoHover = colorsPurple800;
-const textTextColorSuccess = colorsGreen700;
-const textTextColorSuccessHover = colorsGreen800;
-const textTextColorWarning = colorsYellow500;
-const textTextColorWarningHover = colorsYellow600;
-const textTextColorCritical = colorsRed700;
-const textTextColorCriticalHover = colorsRed800;
+const textColorDefault = colorsGray900;
+const textColorLink = colorsMagenta700;
+const textColorLinkHover = colorsMagenta800;
+const textColorInfo = colorsPurple700;
+const textColorInfoHover = colorsPurple800;
+const textColorSuccess = colorsGreen700;
+const textColorSuccessHover = colorsGreen800;
+const textColorWarning = colorsYellow500;
+const textColorWarningHover = colorsYellow600;
+const textColorCritical = colorsRed700;
+const textColorCriticalHover = colorsRed800;
+const iconColorDefault = colorsGray900;
+const iconColorInfo = colorsPurple700;
+const iconColorInfoHover = colorsPurple800;
+const iconColorSuccess = colorsGreen700;
+const iconColorSuccessHover = colorsGreen800;
+const iconColorWarning = colorsYellow500;
+const iconColorWarningHover = colorsYellow600;
+const iconColorCritical = colorsRed700;
+const iconColorCriticalHover = colorsRed800;
+const borderColorDefault = colorsGray900;
+const borderColorInfo = colorsPurple700;
+const borderColorInfoHover = colorsPurple800;
+const borderColorSuccess = colorsGreen700;
+const borderColorSuccessHover = colorsGreen800;
+const borderColorWarning = colorsYellow500;
+const borderColorWarningHover = colorsYellow600;
+const borderColorCritical = colorsRed700;
+const borderColorCriticalHover = colorsRed800;
+const bgColorDefault = colorsBaseWhite;
+const bgColorInverse = colorsGray900;
+const bgColorAccentPrimary = colorsTeal400;
+const bgColorAccentSecondary = colorsMagenta700;
 
 export const Colors = {
     colorsBaseWhite,
@@ -141,15 +163,37 @@ export const Colors = {
     colorsYellow700,
     colorsYellow800,
     colorsYellow900,
-    textTextColorDefault,
-    textTextColorLink,
-    textTextColorLinkHover,
-    textTextColorInfo,
-    textTextColorInfoHover,
-    textTextColorSuccess,
-    textTextColorSuccessHover,
-    textTextColorWarning,
-    textTextColorWarningHover,
-    textTextColorCritical,
-    textTextColorCriticalHover,
+    textColorDefault,
+    textColorLink,
+    textColorLinkHover,
+    textColorInfo,
+    textColorInfoHover,
+    textColorSuccess,
+    textColorSuccessHover,
+    textColorWarning,
+    textColorWarningHover,
+    textColorCritical,
+    textColorCriticalHover,
+    iconColorDefault,
+    iconColorInfo,
+    iconColorInfoHover,
+    iconColorSuccess,
+    iconColorSuccessHover,
+    iconColorWarning,
+    iconColorWarningHover,
+    iconColorCritical,
+    iconColorCriticalHover,
+    borderColorDefault,
+    borderColorInfo,
+    borderColorInfoHover,
+    borderColorSuccess,
+    borderColorSuccessHover,
+    borderColorWarning,
+    borderColorWarningHover,
+    borderColorCritical,
+    borderColorCriticalHover,
+    bgColorDefault,
+    bgColorInverse,
+    bgColorAccentPrimary,
+    bgColorAccentSecondary,
 }
