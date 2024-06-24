@@ -2,10 +2,54 @@
 
 @layer utilities {
    
-  .typography-heading-heading-2 {
-    font-family: "Inter";
+  .typography-heading-jumbo {
+    font-family: "Value Sans Pro";
     font-style: normal;
-    font-weight: 600;
+    font-weight: 500;
+    font-size: 180px;
+    line-height: 200px;
+    letter-spacing: 0em;
+    text-indent: 0px;
+  } 
+
+   
+  .typography-heading-h1 {
+    font-family: "Value Sans Pro";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 60px;
+    line-height: 60px;
+    letter-spacing: 0em;
+    text-indent: 0px;
+  } 
+
+   
+  .typography-heading-h2 {
+    font-family: "Value Sans Pro";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 42px;
+    line-height: 46px;
+    letter-spacing: 0em;
+    text-indent: 0px;
+  } 
+
+   
+  .typography-heading-h3 {
+    font-family: "Value Sans Pro";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 40px;
+    letter-spacing: 0em;
+    text-indent: 0px;
+  } 
+
+   
+  .typography-heading-h4 {
+    font-family: "Value Sans Pro";
+    font-style: normal;
+    font-weight: 500;
     font-size: 28px;
     line-height: 36px;
     letter-spacing: 0em;
@@ -13,67 +57,45 @@
   } 
 
    
-  .typography-body-body-2 {
-    font-family: "Inter";
+  .typography-heading-h5 {
+    font-family: "Value Sans Pro";
     font-style: normal;
     font-weight: 500;
-    font-size: 14px;
-    line-height: 20px;
+    font-size: 24px;
+    line-height: 30px;
     letter-spacing: 0em;
     text-indent: 0px;
   } 
 
    
-  .typography-heading-heading-3 {
-    font-family: "Inter";
+  .typography-heading-h6 {
+    font-family: "Value Sans Pro";
     font-style: normal;
-    font-weight: 600;
-    font-size: 18px;
+    font-weight: 500;
+    font-size: 20px;
     line-height: 28px;
     letter-spacing: 0em;
     text-indent: 0px;
   } 
 
    
-  .typography-body-body-3 {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 0em;
-    text-indent: 0px;
-  } 
-
-   
-  .typography-body-small-weight-semibold {
-    font-family: "Inter";
+  .typography-body {
+    font-family: "Value Sans Pro";
     font-style: normal;
     font-weight: 500;
-    font-size: 12px;
-    line-height: 16px;
-    letter-spacing: 0em;
-    text-indent: 0px;
-  } 
-
-   
-  .typography-heading-heading-1 {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 600;
-    font-size: 36px;
-    line-height: 44px;
-    letter-spacing: 0em;
-    text-indent: 0px;
-  } 
-
-   
-  .typography-body-body-1 {
-    font-family: "Inter";
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
+    letter-spacing: 0em;
+    text-indent: 0px;
+  } 
+
+   
+  .typography-label {
+    font-family: "Value Sans Pro";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
     letter-spacing: 0em;
     text-indent: 0px;
   } 
