@@ -178,16 +178,16 @@ const headingH6 = {
 const body = {
            fontFamily: "Value Sans Pro",
            fontStyle: "normal",
-           fontWeight: 500,
+           fontWeight: 400,
            fontSize: {
                       measure: 16,
                       unit: "Pixels",
                       css: "16px"
                      },
            lineHeight: {
-                          measure: 24,
+                          measure: 16,
                           unit: "Pixels",
-                          css: "24px"
+                          css: "16px"
                          },
            letterSpacing: {
                              measure: 0,
