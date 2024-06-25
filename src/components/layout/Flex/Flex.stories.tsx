@@ -14,7 +14,7 @@ type Story = StoryObj<typeof meta>;
 
 const boxes = (
   <>
-    <Box size="small" />
+    <Box size="full" />
     <Box size="small" />
     <Box size="small" />
   </>
@@ -22,6 +22,8 @@ const boxes = (
 
 export const Row: Story = {
   args: {
+    grow: false,
+    stretch: false,
     direction: 'row',
     justify: 'start',
     align: 'start',
@@ -32,6 +34,8 @@ export const Row: Story = {
 
 export const Column: Story = {
   args: {
+    grow: false,
+    stretch: false,
     direction: 'column',
     justify: 'center',
     align: 'start',
@@ -42,6 +46,8 @@ export const Column: Story = {
 
 export const SpaceBetween: Story = {
   args: {
+    grow: false,
+    stretch: false,
     direction: 'row',
     justify: 'space-between',
     align: 'center',
@@ -52,6 +58,8 @@ export const SpaceBetween: Story = {
 
 export const SpaceAround: Story = {
   args: {
+    grow: false,
+    stretch: false,
     direction: 'row',
     justify: 'space-around',
     align: 'center',
@@ -62,6 +70,8 @@ export const SpaceAround: Story = {
 
 export const FlexEnd: Story = {
   args: {
+    grow: false,
+    stretch: false,
     direction: 'row',
     justify: 'end',
     align: 'center',
@@ -72,6 +82,8 @@ export const FlexEnd: Story = {
 
 export const ColumnFlexEnd: Story = {
   args: {
+    grow: false,
+    stretch: false,
     direction: 'column',
     justify: 'end',
     align: 'center',
@@ -82,6 +94,8 @@ export const ColumnFlexEnd: Story = {
 
 export const ColumnSpaceBetween: Story = {
   args: {
+    grow: false,
+    stretch: false,
     direction: 'column',
     justify: 'space-between',
     align: 'center',
@@ -92,6 +106,8 @@ export const ColumnSpaceBetween: Story = {
 
 export const ColumnSpaceAround: Story = {
   args: {
+    grow: false,
+    stretch: false,
     direction: 'column',
     justify: 'space-around',
     align: 'center',
@@ -102,6 +118,8 @@ export const ColumnSpaceAround: Story = {
 
 export const ColumnFlexStart: Story = {
   args: {
+    grow: false,
+    stretch: false,
     direction: 'column',
     justify: 'start',
     align: 'center',
@@ -112,6 +130,8 @@ export const ColumnFlexStart: Story = {
 
 export const RowFlexEnd: Story = {
   args: {
+    grow: false,
+    stretch: false,
     direction: 'row',
     justify: 'end',
     align: 'center',
@@ -122,6 +142,8 @@ export const RowFlexEnd: Story = {
 
 export const RowCenter: Story = {
   args: {
+    grow: false,
+    stretch: false,
     direction: 'row',
     justify: 'center',
     align: 'center',
@@ -132,6 +154,8 @@ export const RowCenter: Story = {
 
 export const ColumnCenter: Story = {
   args: {
+    grow: false,
+    stretch: false,
     direction: 'column',
     justify: 'center',
     align: 'center',
@@ -142,6 +166,8 @@ export const ColumnCenter: Story = {
 
 export const RowFlexStart: Story = {
   args: {
+    grow: false,
+    stretch: false,
     direction: 'row',
     justify: 'start',
     align: 'center',
@@ -152,6 +178,8 @@ export const RowFlexStart: Story = {
 
 export const RowSpaceBetween: Story = {
   args: {
+    grow: false,
+    stretch: false,
     direction: 'row',
     justify: 'space-between',
     align: 'center',
@@ -162,6 +190,8 @@ export const RowSpaceBetween: Story = {
 
 export const RowSpaceAround: Story = {
   args: {
+    grow: false,
+    stretch: false,
     direction: 'row',
     justify: 'space-around',
     align: 'center',

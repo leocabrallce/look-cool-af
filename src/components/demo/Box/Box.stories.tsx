@@ -29,3 +29,9 @@ export const Large: Story = {
     size: 'large',
   },
 };
+
+export const Full: Story = {
+  args: {
+    size: 'full',
+  },
+};

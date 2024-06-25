@@ -1,7 +1,7 @@
 import { styled } from '../../../stitches.config';
 
 type Props = {
-  size?: 'small' | 'medium' | 'large';
+  size?: 'small' | 'medium' | 'large' | 'full';
 };
 
 const Box = styled('div', {
@@ -22,6 +22,10 @@ const Box = styled('div', {
         width: '300px',
         height: '300px',
       },
+      full: {
+        width: '100%',
+        height: '100%',
+      },
     },
   },
 });
@@ -29,7 +33,7 @@ const Box = styled('div', {
 /**
  * A box used for demo purposes. Should not be used in production.
  */
-function BoxComponent({ size }: Props) {
+function BoxComponent({ size = 'full' }: Props) {
   return <Box size={size} />;
 }
 

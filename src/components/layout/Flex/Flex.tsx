@@ -2,6 +2,8 @@ import { PropsWithChildren } from "react";
 import { styled } from '../../../stitches.config';
 
 type Props = {
+  grow?: boolean;
+  stretch?: boolean;
   direction?: 'row' | 'column';
   justify?: 'start' | 'center' | 'end' | 'space-between' | 'space-around';
   align?: 'start' | 'center' | 'end';
@@ -11,6 +13,17 @@ type Props = {
 const Flex = styled('div', {
   display: 'flex',
   variants: {
+    grow: {
+      true: {
+        flexGrow: 1,
+      },
+    },
+    stretch: {
+      true: {
+        flexShrink: 0,
+        flexBasis: 'auto',
+      },
+    },
     direction: {
       row: {
         flexDirection: 'row',
@@ -101,11 +114,18 @@ const Flex = styled('div', {
 });
 
 /**
- * Encapsulates a flex container with a direction, justify, align, and gap.
+ * Encapsulates a flex container with optional grow, stretch, direction, justify, align, and gap props.
  */
-const FlexComponent = ({ direction, justify, align, children, gap, ...props }: PropsWithChildren<Props>) => {
+const FlexComponent = ({ children, grow, stretch, direction, justify, align, gap }: PropsWithChildren<Props>) => {
   return (
-    <Flex direction={direction} justify={justify} align={align} gap={gap} {...props}>
+    <Flex
+      grow={grow}
+      stretch={stretch}
+      direction={direction}
+      justify={justify}
+      align={align}
+      gap={gap}
+    >
       {children}
     </Flex>
   );
