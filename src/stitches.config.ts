@@ -18,6 +18,16 @@ export const {
     },
     radii: {
       ...Theme.radii,
+      "0": Theme.measures.dimensionBorderRadius0.css,
+      "050": Theme.measures.dimensionBorderRadius050.css,
+      "100": Theme.measures.dimensionBorderRadius100.css,
+      "150": Theme.measures.dimensionBorderRadius150.css,
+      "200": Theme.measures.dimensionBorderRadius200.css,
+      "300": Theme.measures.dimensionBorderRadius300.css,
+      "400": Theme.measures.dimensionBorderRadius400.css,
+      "500": Theme.measures.dimensionBorderRadius500.css,
+      "750": Theme.measures.dimensionBorderRadius750.css,
+      full: Theme.measures.dimensionBorderRadiusFull.css,
     },
     space: {
       spacing0: Theme.measures.dimensionSpacing0.css,
@@ -92,7 +102,17 @@ export const {
       body: Theme.typographies.body.fontWeight,
       label: Theme.typographies.label.fontWeight,
       helperText: Theme.typographies.helperText.fontWeight,
-    }
+    },
+    borderStyles: {
+      none: "none",
+      solid: "solid",
+    },
+    borderWidths: {
+      none: Theme.borders.none.width.css,
+      sm: Theme.borders.sm.width.css,
+      md: Theme.borders.md.width.css,
+      lg: Theme.borders.lg.width.css,
+    },
   },
   media: {
     xs: `(min-width: ${Theme.measures.dimensionBreakpointXs.css})`,
