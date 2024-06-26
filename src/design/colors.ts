@@ -100,6 +100,16 @@ const bgColorSuccess = colorsGreen100;
 const bgColorWarning = colorsYellow100;
 const bgColorCritical = colorsRed100;
 const bgColorInfo = colorsPurple100;
+const textColorRequired = colorsRed700;
+const borderColorInputDefault = colorsGray900;
+const borderColorInputDefaultHover = colorsTeal400;
+const borderColorInputSuccess = colorsGreen700;
+const borderColorInputSuccessHover = colorsGreen800;
+const borderColorInputWarning = colorsYellow600;
+const borderColorInputWarningHover = colorsYellow700;
+const borderColorInputCritical = colorsRed600;
+const borderColorInputCriticalHover = colorsRed800;
+const bgColorDefaultHover = colorsGray300;
 
 export const Colors = {
     colorsBaseWhite,
@@ -204,4 +214,14 @@ export const Colors = {
     bgColorWarning,
     bgColorCritical,
     bgColorInfo,
+    textColorRequired,
+    borderColorInputDefault,
+    borderColorInputDefaultHover,
+    borderColorInputSuccess,
+    borderColorInputSuccessHover,
+    borderColorInputWarning,
+    borderColorInputWarningHover,
+    borderColorInputCritical,
+    borderColorInputCriticalHover,
+    bgColorDefaultHover,
 }
