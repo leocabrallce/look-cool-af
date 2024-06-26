@@ -1,7 +1,7 @@
 import { PropsWithChildren, useRef } from "react";
-import { styled } from '../../stitches.config';
-import { Stack } from "../layout/Stack";
+import { styled } from '../../../stitches.config';
 import { nanoid } from "nanoid";
+import Stack from "../../layout/Stack";
 
 type Props = {
   state: "default" | "critical" | "success" | "disabled";
