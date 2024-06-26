@@ -12,7 +12,7 @@ type Props = {
   gap?: Spacing;
 };
 
-const Flex = styled('div', {
+const StyledFlex = styled('div', {
   display: 'flex',
   variants: {
     gap: gap,
@@ -75,9 +75,9 @@ const Flex = styled('div', {
 /**
  * Encapsulates a flex container with optional grow, stretch, direction, justify, align, and gap props.
  */
-const FlexComponent = ({ children, grow, stretch, direction, justify, align, gap }: PropsWithChildren<Props>) => {
+const Flex = ({ children, grow, stretch, direction, justify, align, gap }: PropsWithChildren<Props>) => {
   return (
-    <Flex
+    <StyledFlex
       grow={grow}
       stretch={stretch}
       direction={direction}
@@ -86,8 +86,8 @@ const FlexComponent = ({ children, grow, stretch, direction, justify, align, gap
       gap={gap}
     >
       {children}
-    </Flex>
+    </StyledFlex>
   );
 };
 
-export default FlexComponent;
+export default Flex;
