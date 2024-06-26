@@ -177,3 +177,22 @@ table {
   font-weight: 500;
   src: url("./fonts/ValueSansPro-MediumItalic.ttf") format("truetype");
 }
+
+body {
+  font-family: "ValueSansPro", sans-serif;
+  color: var(--colors-textColorDefault);
+  background-color: var(--colors-bgColorDefault);
+}
+
+* {
+  transition-property: color, background-color, border-color,
+    text-decoration-color, fill, stroke;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+:focus-visible {
+  outline: var(--borderWidths-sm) var(--borderStyles-solid)
+    var(--colors-borderColorDefault);
+  outline-offset: var(--borderWidths-md);
+}

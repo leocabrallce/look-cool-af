@@ -8,7 +8,7 @@ type Props = {
   gap?: Spacing;
 };
 
-const Stack = styled('div', {
+const StackLayout = styled('div', {
   display: 'flex',
   flexDirection: 'column',
   gap: '0',
@@ -25,12 +25,12 @@ const Stack = styled('div', {
   },
 });
 
-export const StackComponent = ({ direction = 'column', gap = '0', children }: PropsWithChildren<Props>) => {
+export const Stack = ({ direction = 'column', gap = '0', children }: PropsWithChildren<Props>) => {
   return (
-    <Stack direction={direction} gap={gap}>
+    <StackLayout direction={direction} gap={gap}>
       {children}
-    </Stack>
+    </StackLayout>
   );
 };
 
-export default StackComponent;
+export default Stack;
