@@ -31,7 +31,7 @@ const Box = styled('div', {
 });
 
 /**
- * A box used for demo purposes. Should not be used in production.
+ * A wrapper for any HTML element. Used to build most of our other components.
  */
 function BoxComponent({ size = 'full' }: Props) {
   return <Box size={size} />;
