@@ -3,7 +3,7 @@ import Card from './Card';
 import Box from '../../primitives/Box/Box';
 
 const meta = {
-  title: 'Layout/Card',
+  title: 'Components/Layout/Card',
   component: Card,
   // parameters: { layout: 'centered' },
   tags: ['autodocs'],

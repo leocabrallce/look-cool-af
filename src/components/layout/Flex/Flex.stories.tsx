@@ -3,7 +3,7 @@ import Flex from './Flex';
 import Box from '../../primitives/Box/Box';
 
 const meta = {
-  title: 'Layout/Flex',
+  title: 'Components/Layout/Flex',
   component: Flex,
   // parameters: { layout: 'centered' },
   tags: ['autodocs'],

@@ -3,7 +3,7 @@ import Grid from './Grid';
 import Box from '../../primitives/Box/Box';
 
 const meta = {
-  title: 'Layout/Grid',
+  title: 'Components/Layout/Grid',
   component: Grid,
   // parameters: { layout: 'centered' },
   tags: ['autodocs'],

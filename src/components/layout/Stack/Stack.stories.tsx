@@ -3,7 +3,7 @@ import Stack from './Stack';
 import Box from '../../primitives/Box/Box';
 
 const meta = {
-  title: 'Layout/Stack',
+  title: 'Components/Layout/Stack',
   component: Stack,
   // parameters: { layout: 'centered' },
   tags: ['autodocs'],
