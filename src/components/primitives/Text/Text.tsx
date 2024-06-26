@@ -7,9 +7,6 @@ type Props = {
   color: 'default' | 'link' | 'link-hover' | 'info' | 'success' | 'warning' | 'critical' | 'required';
 };
 
-// 'as' will be how we determine the HTML element to render, but no styles will be applied
-// 'size' will be how we determine the typography style to apply, based on the theme, but regardless of the HTML element
-
 export const Text = styled('span', {
   fontFamily: '$body',
   fontSize: '$body',
@@ -108,6 +105,9 @@ export const Text = styled('span', {
   },
 });
 
+/**
+ * Text component that render a semantic HTML element based on the `as` prop.
+ */
 const TextComponent = ({ children, as, size, color }: Props) => {
   return (
     <Text as={as} size={size} color={color}>
