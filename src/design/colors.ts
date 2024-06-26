@@ -36,7 +36,7 @@ const colorsPurple400 = "#c999ff";
 const colorsPurple300 = "#dabaff";
 const colorsPurple200 = "#e4ccff";
 const colorsPurple100 = "#f4ebff";
-const colorsGreen100 = "#edffed";
+const colorsGreen100 = "#f0fdf4";
 const colorsGreen200 = "#e0ffdb";
 const colorsGreen300 = "#cdffcc";
 const colorsGreen400 = "#99ff9d";
@@ -45,7 +45,7 @@ const colorsGreen600 = "#27eb46";
 const colorsGreen700 = "#28c600";
 const colorsGreen800 = "#008005";
 const colorsGreen900 = "#114000";
-const colorsRed100 = "#fee2e2";
+const colorsRed100 = "#fef2f2";
 const colorsRed200 = "#fecaca";
 const colorsRed300 = "#fca5a5";
 const colorsRed400 = "#f87171";
@@ -54,7 +54,7 @@ const colorsRed600 = "#dc2626";
 const colorsRed700 = "#b91c1c";
 const colorsRed800 = "#991b1b";
 const colorsRed900 = "#7f1d1d";
-const colorsYellow100 = "#fef9c3";
+const colorsYellow100 = "#fefce8";
 const colorsYellow200 = "#fef08a";
 const colorsYellow300 = "#fde047";
 const colorsYellow400 = "#facc15";
@@ -63,17 +63,53 @@ const colorsYellow600 = "#ca8a04";
 const colorsYellow700 = "#a16207";
 const colorsYellow800 = "#854d0e";
 const colorsYellow900 = "#713f12";
-const textTextColorDefault = colorsGray900;
-const textTextColorLink = colorsMagenta700;
-const textTextColorLinkHover = colorsMagenta800;
-const textTextColorInfo = colorsPurple700;
-const textTextColorInfoHover = colorsPurple800;
-const textTextColorSuccess = colorsGreen700;
-const textTextColorSuccessHover = colorsGreen800;
-const textTextColorWarning = colorsYellow500;
-const textTextColorWarningHover = colorsYellow600;
-const textTextColorCritical = colorsRed700;
-const textTextColorCriticalHover = colorsRed800;
+const textColorDefault = colorsGray900;
+const textColorLink = colorsMagenta700;
+const textColorLinkHover = colorsMagenta800;
+const textColorInfo = colorsPurple900;
+const textColorInfoHover = colorsPurple800;
+const textColorSuccess = colorsGreen900;
+const textColorSuccessHover = colorsGreen800;
+const textColorWarning = colorsYellow900;
+const textColorWarningHover = colorsYellow600;
+const textColorCritical = colorsRed900;
+const textColorCriticalHover = colorsRed800;
+const iconColorDefault = colorsGray900;
+const iconColorInfo = colorsPurple900;
+const iconColorInfoHover = colorsPurple800;
+const iconColorSuccess = colorsGreen900;
+const iconColorSuccessHover = colorsGreen800;
+const iconColorWarning = colorsYellow900;
+const iconColorWarningHover = colorsYellow600;
+const iconColorCritical = colorsRed900;
+const iconColorCriticalHover = colorsRed800;
+const borderColorDefault = colorsGray900;
+const borderColorInfo = colorsPurple900;
+const borderColorInfoHover = colorsPurple800;
+const borderColorSuccess = colorsGreen900;
+const borderColorSuccessHover = colorsGreen800;
+const borderColorWarning = colorsYellow900;
+const borderColorWarningHover = colorsYellow600;
+const borderColorCritical = colorsRed900;
+const borderColorCriticalHover = colorsRed800;
+const bgColorDefault = colorsBaseWhite;
+const bgColorInverse = colorsGray900;
+const bgColorAccentPrimary = colorsTeal400;
+const bgColorAccentSecondary = colorsMagenta700;
+const bgColorSuccess = colorsGreen100;
+const bgColorWarning = colorsYellow100;
+const bgColorCritical = colorsRed100;
+const bgColorInfo = colorsPurple100;
+const textColorRequired = colorsRed700;
+const borderColorInputDefault = colorsGray900;
+const borderColorInputDefaultHover = colorsTeal400;
+const borderColorInputSuccess = colorsGreen700;
+const borderColorInputSuccessHover = colorsGreen800;
+const borderColorInputWarning = colorsYellow600;
+const borderColorInputWarningHover = colorsYellow700;
+const borderColorInputCritical = colorsRed600;
+const borderColorInputCriticalHover = colorsRed800;
+const bgColorDefaultHover = colorsGray300;
 
 export const Colors = {
     colorsBaseWhite,
@@ -141,15 +177,51 @@ export const Colors = {
     colorsYellow700,
     colorsYellow800,
     colorsYellow900,
-    textTextColorDefault,
-    textTextColorLink,
-    textTextColorLinkHover,
-    textTextColorInfo,
-    textTextColorInfoHover,
-    textTextColorSuccess,
-    textTextColorSuccessHover,
-    textTextColorWarning,
-    textTextColorWarningHover,
-    textTextColorCritical,
-    textTextColorCriticalHover,
+    textColorDefault,
+    textColorLink,
+    textColorLinkHover,
+    textColorInfo,
+    textColorInfoHover,
+    textColorSuccess,
+    textColorSuccessHover,
+    textColorWarning,
+    textColorWarningHover,
+    textColorCritical,
+    textColorCriticalHover,
+    iconColorDefault,
+    iconColorInfo,
+    iconColorInfoHover,
+    iconColorSuccess,
+    iconColorSuccessHover,
+    iconColorWarning,
+    iconColorWarningHover,
+    iconColorCritical,
+    iconColorCriticalHover,
+    borderColorDefault,
+    borderColorInfo,
+    borderColorInfoHover,
+    borderColorSuccess,
+    borderColorSuccessHover,
+    borderColorWarning,
+    borderColorWarningHover,
+    borderColorCritical,
+    borderColorCriticalHover,
+    bgColorDefault,
+    bgColorInverse,
+    bgColorAccentPrimary,
+    bgColorAccentSecondary,
+    bgColorSuccess,
+    bgColorWarning,
+    bgColorCritical,
+    bgColorInfo,
+    textColorRequired,
+    borderColorInputDefault,
+    borderColorInputDefaultHover,
+    borderColorInputSuccess,
+    borderColorInputSuccessHover,
+    borderColorInputWarning,
+    borderColorInputWarningHover,
+    borderColorInputCritical,
+    borderColorInputCriticalHover,
+    bgColorDefaultHover,
 }

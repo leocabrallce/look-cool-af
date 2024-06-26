@@ -88,26 +88,6 @@ const dimensionFontLineHeightLabel = {
           unit: "Pixels",
           css: "20px"
          };
-const dimensionFontLetterSpacingH1 = {
-          measure: 0,
-          unit: "Pixels",
-          css: "0px"
-         };
-const dimensionFontLetterSpacingH2 = {
-          measure: 0,
-          unit: "Pixels",
-          css: "0px"
-         };
-const dimensionFontLetterSpacingH3 = {
-          measure: 0,
-          unit: "Pixels",
-          css: "0px"
-         };
-const dimensionFontLetterSpacingBody = {
-          measure: 0,
-          unit: "Pixels",
-          css: "0px"
-         };
 const dimensionSpacing0 = {
           measure: 0,
           unit: "Pixels",
@@ -293,10 +273,6 @@ export const Measures = {
       dimensionFontLineHeightH6,
       dimensionFontLineHeightBody,
       dimensionFontLineHeightLabel,
-      dimensionFontLetterSpacingH1,
-      dimensionFontLetterSpacingH2,
-      dimensionFontLetterSpacingH3,
-      dimensionFontLetterSpacingBody,
       dimensionSpacing0,
       dimensionSpacing025,
       dimensionSpacing050,
