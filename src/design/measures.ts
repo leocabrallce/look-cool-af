@@ -268,6 +268,11 @@ const borderRadiusFull = {
           unit: "Pixels",
           css: "9999px"
          };
+const borderWidthDefault = {
+          measure: 1,
+          unit: "Pixels",
+          css: "1px"
+         };
 
 export const Measures = {
       dimensionFontTextSizeJumbo,
@@ -324,4 +329,5 @@ export const Measures = {
       borderRadius0,
       borderRadius050,
       borderRadiusFull,
+      borderWidthDefault,
 }

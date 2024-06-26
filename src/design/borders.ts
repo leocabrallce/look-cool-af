@@ -28,10 +28,20 @@ const lg = {
                   },
            position: "Outside",
          };
+const none = {
+           color: Colors.borderColorDefault,
+           width: {
+                   measure: 0,
+                   unit: "Pixels",
+                   css: "0px"
+                  },
+           position: "Outside",
+         };
 
 
 export const Borders = {
       sm,
       md,
       lg,
+      none,
 }
