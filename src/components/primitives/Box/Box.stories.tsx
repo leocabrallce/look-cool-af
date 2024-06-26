@@ -1,9 +1,8 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import Box from './Box';
 
-// More on how to set up stories at: https://storybook.js.org/docs/writing-stories#default-export
 const meta = {
-  title: 'Demo/Box',
+  title: 'Primitives/Box',
   component: Box,
   parameters: { layout: 'centered' },
   tags: ['autodocs'],
