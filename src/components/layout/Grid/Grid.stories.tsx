@@ -7,6 +7,11 @@ const meta = {
   component: Grid,
   // parameters: { layout: 'centered' },
   tags: ['autodocs'],
+  parameters: {
+    controls: {
+      exclude: ['children']
+    }
+  }
 } satisfies Meta<typeof Grid>;
 
 export default meta;

@@ -1,10 +1,10 @@
 import type { Meta, StoryObj } from '@storybook/react';
-import Stack from './Stack';
+import Card from './Card';
 import Box from '../../primitives/Box/Box';
 
 const meta = {
-  title: 'Layout/Stack',
-  component: Stack,
+  title: 'Layout/Card',
+  component: Card,
   // parameters: { layout: 'centered' },
   tags: ['autodocs'],
   parameters: {
@@ -12,7 +12,7 @@ const meta = {
       exclude: ['children']
     }
   }
-} satisfies Meta<typeof Stack>;
+} satisfies Meta<typeof Card>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
@@ -25,18 +25,8 @@ const boxes = (
   </>
 );
 
-export const Row: Story = {
+export const Default: Story = {
   args: {
-    direction: 'row',
-    gap: "10",
-    children: boxes,
-  },
-};
-
-export const Column: Story = {
-  args: {
-    direction: 'column',
-    gap: "10",
     children: boxes,
   },
 };

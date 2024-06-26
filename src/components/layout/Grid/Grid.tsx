@@ -1,17 +1,20 @@
 import { PropsWithChildren } from "react";
 import { styled } from '../../../stitches.config';
+import type { Spacing } from '../../../types/Spacing';
+import gap from "../../../utils/gap";
 
 // TODO: Margins and paddings should be set
 type Props = {
   columns?: "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "11" | "12";
   rows?: "1" | "2" | "3" | "4" | "5" | "6" | "7" | "8" | "9" | "10" | "11" | "12";
-  gap?: "0" | "1" | "2" | "3" | "4" | "5" | "6" | "8" | "10" | "12" | "16" | "20" | "24" | "32";
+  gap?: Spacing;
 };
 
 const Grid = styled('div', {
   display: 'grid',
   gridAutoFlow: 'row',
   variants: {
+    gap: gap,
     columns: {
       1: {
         gridTemplateColumns: 'repeat(1, 1fr)',
@@ -86,50 +89,6 @@ const Grid = styled('div', {
       },
       12: {
         gridTemplateRows: 'repeat(12, 1fr)',
-      },
-    },
-    gap: {
-      0: {
-        gap: '$spacing0',
-      },
-      1: {
-        gap: '$spacing100',
-      },
-      2: {
-        gap: '$spacing200',
-      },
-      3: {
-        gap: '$spacing300',
-      },
-      4: {
-        gap: '$spacing400',
-      },
-      5: {
-        gap: '$spacing500',
-      },
-      6: {
-        gap: '$spacing600',
-      },
-      8: {
-        gap: '$spacing800',
-      },
-      10: {
-        gap: '$spacing1000',
-      },
-      12: {
-        gap: '$spacing1200',
-      },
-      16: {
-        gap: '$spacing1600',
-      },
-      20: {
-        gap: '$spacing2000',
-      },
-      24: {
-        gap: '$spacing2400',
-      },
-      32: {
-        gap: '$spacing3200',
       },
     },
   },

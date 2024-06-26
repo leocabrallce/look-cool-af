@@ -7,6 +7,11 @@ const meta = {
   component: Flex,
   // parameters: { layout: 'centered' },
   tags: ['autodocs'],
+  parameters: {
+    controls: {
+      exclude: ['children']
+    }
+  }
 } satisfies Meta<typeof Flex>;
 
 export default meta;
