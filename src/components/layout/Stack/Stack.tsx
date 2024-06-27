@@ -4,7 +4,7 @@ import { Spacing } from "../../../types/Spacing";
 import gap from "../../../utils/gap";
 
 type Props = {
-  direction?: 'row' | 'column';
+  direction?: 'horizontal' | 'vertical';
   gap?: Spacing;
 };
 
@@ -15,17 +15,17 @@ const StackLayout = styled('div', {
   variants: {
     gap: gap,
     direction: {
-      row: {
+      horizontal: {
         flexDirection: 'row',
       },
-      column: {
+      vertical: {
         flexDirection: 'column',
       },
     },
   },
 });
 
-export const Stack = ({ direction = 'column', gap = '0', children }: PropsWithChildren<Props>) => {
+export const Stack = ({ direction = 'vertical', gap = '0', children }: PropsWithChildren<Props>) => {
   return (
     <StackLayout direction={direction} gap={gap}>
       {children}

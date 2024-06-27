@@ -11,8 +11,9 @@ type Props = {
   helperText?: string;
   placeholder?: string;
   type?: 'text' | 'password' | 'email' | 'number';
-  // TODO: Icon
-  // icon?: React.ReactNode;
+  // TODO: Icon variations for text input
+  // iconLeft?: React.ReactNode;
+  // iconRight?: React.ReactNode;
 };
 
 const StyledInput = styled('input', {

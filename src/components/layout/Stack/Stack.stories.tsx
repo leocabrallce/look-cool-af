@@ -25,17 +25,17 @@ const boxes = (
   </>
 );
 
-export const Row: Story = {
+export const Horizontal: Story = {
   args: {
-    direction: 'row',
+    direction: 'horizontal',
     gap: "10",
     children: boxes,
   },
 };
 
-export const Column: Story = {
+export const Vertical: Story = {
   args: {
-    direction: 'column',
+    direction: 'vertical',
     gap: "10",
     children: boxes,
   },
