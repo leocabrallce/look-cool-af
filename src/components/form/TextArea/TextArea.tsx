@@ -2,6 +2,8 @@ import { PropsWithChildren } from "react";
 import { styled } from '../../../stitches.config';
 import { nanoid } from "nanoid";
 import Stack from "../../layout/Stack";
+import Label from "../Label/Label";
+import { HelperText } from "../HelperText/HelperText";
 
 type Props = {
   state: "default" | "critical" | "success" | "disabled";
@@ -108,35 +110,10 @@ const StyledLabel = styled('label', {
   }
 });
 
-const StyledHelperText = styled('span', {
-  fontFamily: '$helperText',
-  fontSize: '$helperText',
-  lineHeight: '$helperText',
-  letterSpacing: '$helperText',
-  fontWeight: '$helperText',
-  hidden: false,
-  variants: {
-    state: {
-      default: {
-        color: '$textColorDefault',
-      },
-      critical: {
-        color: '$textColorCritical',
-      },
-      success: {
-        color: '$textColorSuccess',
-      },
-      disabled: {
-        opacity: 0.6,
-      },
-    },
-  }
-});
-
 /**
  * An Text Area is a form element that lets users enter one of various types of text on a single or multiple lines.
  */
-export const TextArea = ({
+const TextArea = ({
   state = 'default',
   showLabel = true,
   showHelperText = true,
@@ -149,14 +126,9 @@ export const TextArea = ({
 
   return (
     <Stack direction="vertical" gap="1">
-      <StyledLabel
-        htmlFor={id}
-        aria-hidden={!showLabel}
-        hidden={!showLabel}
-        state={state}
-      >
+      <Label htmlFor={id} ariaHidden={!showLabel} hidden={!showLabel} state={state}>
         {label}
-      </StyledLabel>
+      </Label>
       <StyledTextArea
         id={id}
         resize={resize}
@@ -165,14 +137,9 @@ export const TextArea = ({
         disabled={state === 'disabled'}
         aria-describedby={helperText ? `${id}-helper-text` : undefined}
       />
-      <StyledHelperText
-        id={`${id}-helper-text`}
-        aria-hidden={!showHelperText}
-        state={state}
-        hidden={!showHelperText}
-      >
+      <HelperText id={id} showHelperText={showHelperText} state={state}>
         {helperText}
-      </StyledHelperText>
+      </HelperText>
     </Stack>
   );
 };

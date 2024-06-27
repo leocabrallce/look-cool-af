@@ -2,6 +2,8 @@ import { PropsWithChildren, useRef } from "react";
 import { styled } from '../../../stitches.config';
 import { nanoid } from "nanoid";
 import Stack from "../../layout/Stack";
+import Label from "../Label/Label";
+import { HelperText } from "../HelperText/HelperText";
 
 type Props = {
   state: "default" | "critical" | "success" | "disabled";
@@ -68,57 +70,6 @@ const StyledInput = styled('input', {
   },
 });
 
-const StyledLabel = styled('label', {
-  fontFamily: '$label',
-  fontSize: '$label',
-  lineHeight: '$label',
-  letterSpacing: '$label',
-  fontWeight: '$label',
-  color: '$textColorDefault',
-  hidden: false,
-  variants: {
-    state: {
-      default: {
-        color: '$textColorDefault',
-      },
-      critical: {
-        color: '$textColorDefault',
-      },
-      success: {
-        color: '$textColorDefault',
-      },
-      disabled: {
-        opacity: 0.6,
-      },
-    },
-  }
-});
-
-const StyledHelperText = styled('span', {
-  fontFamily: '$helperText',
-  fontSize: '$helperText',
-  lineHeight: '$helperText',
-  letterSpacing: '$helperText',
-  fontWeight: '$helperText',
-  hidden: false,
-  variants: {
-    state: {
-      default: {
-        color: '$textColorDefault',
-      },
-      critical: {
-        color: '$textColorCritical',
-      },
-      success: {
-        color: '$textColorSuccess',
-      },
-      disabled: {
-        opacity: 0.6,
-      },
-    },
-  }
-});
-
 /**
  * An Input is a form element that lets users enter one of various types of text on a single line.
  */
@@ -136,14 +87,9 @@ export const TextInput = ({
 
   return (
     <Stack direction="vertical" gap="1">
-      <StyledLabel
-        htmlFor={id}
-        aria-hidden={!showLabel}
-        hidden={!showLabel}
-        state={state}
-      >
+      <Label htmlFor={id} ariaHidden={!showLabel} hidden={!showLabel} state={state}>
         {label}
-      </StyledLabel>
+      </Label>
       <StyledInput
         ref={inputRef}
         id={id}
@@ -153,14 +99,9 @@ export const TextInput = ({
         disabled={state === 'disabled'}
         aria-describedby={helperText ? `${id}-helper-text` : undefined}
       />
-      <StyledHelperText
-        id={`${id}-helper-text`}
-        aria-hidden={!showHelperText}
-        state={state}
-        hidden={!showHelperText}
-      >
+      <HelperText id={id} showHelperText={showHelperText} state={state}>
         {helperText}
-      </StyledHelperText>
+      </HelperText>
     </Stack>
   );
 };
