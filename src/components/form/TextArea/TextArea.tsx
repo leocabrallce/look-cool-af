@@ -1,4 +1,4 @@
-import { PropsWithChildren, useRef } from "react";
+import { PropsWithChildren } from "react";
 import { styled } from '../../../stitches.config';
 import { nanoid } from "nanoid";
 import Stack from "../../layout/Stack";
@@ -10,13 +10,13 @@ type Props = {
   label?: string;
   helperText?: string;
   placeholder?: string;
-  type?: 'text' | 'password' | 'email' | 'number';
-  // TODO: Icon variations for text input
+  resize?: 'none' | 'both' | 'horizontal' | 'vertical';
+  // TODO: Icon variations for text area
   // iconLeft?: React.ReactNode;
   // iconRight?: React.ReactNode;
 };
 
-const StyledInput = styled('input', {
+const StyledTextArea = styled('textarea', {
   padding: '$spacing200',
   borderColor: '$borderColorInputDefault',
   backgroundColor: '$bgColorDefault',
@@ -62,6 +62,20 @@ const StyledInput = styled('input', {
         },
       },
     },
+    resize: {
+      none: {
+        resize: 'none',
+      },
+      both: {
+        resize: 'both',
+      },
+      horizontal: {
+        resize: 'horizontal',
+      },
+      vertical: {
+        resize: 'vertical',
+      }
+    }
   },
   defaultVariants: {
     state: 'default',
@@ -120,18 +134,17 @@ const StyledHelperText = styled('span', {
 });
 
 /**
- * An Input is a form element that lets users enter one of various types of text on a single line.
+ * An Text Area is a form element that lets users enter one of various types of text on a single or multiple lines.
  */
-export const TextInput = ({
+export const TextArea = ({
   state = 'default',
   showLabel = true,
   showHelperText = true,
   label = 'Label',
   helperText = 'Helper text',
   placeholder = 'Placeholder',
-  type = 'text',
+  resize = 'vertical',
 }: PropsWithChildren<Props>) => {
-  const inputRef = useRef<HTMLInputElement>(null);
   const id = nanoid();
 
   return (
@@ -144,10 +157,9 @@ export const TextInput = ({
       >
         {label}
       </StyledLabel>
-      <StyledInput
-        ref={inputRef}
+      <StyledTextArea
         id={id}
-        type={type}
+        resize={resize}
         placeholder={placeholder}
         state={state}
         disabled={state === 'disabled'}
@@ -165,4 +177,4 @@ export const TextInput = ({
   );
 };
 
-export default TextInput;
+export default TextArea;
