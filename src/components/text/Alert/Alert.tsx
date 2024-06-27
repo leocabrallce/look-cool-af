@@ -2,16 +2,13 @@ import { styled } from '../../../stitches.config';
 import { Text } from "../../primitives/Text";
 import Icon from "../../icons/Icon";
 import Flex from '../../layout/Flex';
-import Stack from '../../layout/Stack';
-import Paragraph from '../Paragraph/Paragraph';
 
 type Props = {
   title: string;
   type: 'info' | 'success' | 'warning' | 'critical';
-  children: string;
 };
 
-const StyledCallout = styled('div', {
+const StyledAlert = styled('div', {
   padding: '$spacing400',
   borderWidth: '$sm',
   borderStyle: '$solid',
@@ -47,23 +44,20 @@ const SuccessIcon = <Icon type="CheckCircledIcon" size='medium' />;
 const WarningIcon = <Icon type="ExclamationTriangleIcon" size='medium' />;
 const CriticalIcon = <Icon type="CrossCircledIcon" size='medium' />;
 
-export const Callout = ({ type, children, title }: Props) => {
+export const Alert = ({ type, title }: Props) => {
   return (
-    <StyledCallout type={type}>
-      <Stack direction="vertical" gap="4">
-        <Flex gap="4" align="center">
-          {type === 'info' && InfoIcon}
-          {type === 'success' && SuccessIcon}
-          {type === 'warning' && WarningIcon}
-          {type === 'critical' && CriticalIcon}
-          <Text as="span" size="h6">
-            {title}
-          </Text>
-        </Flex>
-        <Paragraph>{children}</Paragraph>
-      </Stack>
-    </StyledCallout>
+    <StyledAlert type={type}>
+      <Flex gap="4" align="center">
+        {type === 'info' && InfoIcon}
+        {type === 'success' && SuccessIcon}
+        {type === 'warning' && WarningIcon}
+        {type === 'critical' && CriticalIcon}
+        <Text as="span" size="h6">
+          {title}
+        </Text>
+      </Flex>
+    </StyledAlert>
   );
 };
 
-export default Callout;
+export default Alert;
