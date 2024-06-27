@@ -1,4 +1,6 @@
 import { styled } from '../../../stitches.config';
+import Flex from '../../layout/Flex';
+import Required from '../Required/Required';
 
 const StyledLabel = styled('label', {
   fontFamily: '$label',
@@ -32,18 +34,22 @@ type Props = {
   hidden: boolean;
   state: 'default' | 'critical' | 'success' | 'disabled';
   children: string;
+  required: boolean;
 };
 
-const Label = ({ htmlFor, ariaHidden, hidden, state, children }: Props) => {
+const Label = ({ htmlFor, ariaHidden, hidden, state, children, required }: Props) => {
   return (
-    <StyledLabel
-      htmlFor={htmlFor}
-      aria-hidden={ariaHidden}
-      hidden={hidden}
-      state={state}
-    >
-      {children}
-    </StyledLabel>
+    <Flex align="center" direction="row" gap="1">
+      <Required required={required} />
+      <StyledLabel
+        htmlFor={htmlFor}
+        aria-hidden={ariaHidden}
+        hidden={hidden}
+        state={state}
+      >
+        {children}
+      </StyledLabel>
+    </Flex>
   );
 };
 

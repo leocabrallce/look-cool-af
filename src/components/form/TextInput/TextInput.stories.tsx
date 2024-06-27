@@ -94,3 +94,16 @@ export const NoLabelAndNoHelperText: Story = {
     type: 'text',
   },
 };
+
+export const Required: Story = {
+  args: {
+    state: 'default',
+    showLabel: true,
+    showHelperText: true,
+    label: 'Label',
+    helperText: 'Helper text',
+    placeholder: 'Placeholder',
+    type: 'text',
+    required: true,
+  },
+};

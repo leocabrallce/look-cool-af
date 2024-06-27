@@ -87,3 +87,15 @@ export const NoLabelAndNoHelperText: Story = {
     placeholder: 'Placeholder',
   },
 };
+
+export const Required: Story = {
+  args: {
+    state: 'default',
+    showLabel: true,
+    showHelperText: true,
+    label: 'Label',
+    helperText: 'Helper text',
+    placeholder: 'Placeholder',
+    required: true,
+  },
+};

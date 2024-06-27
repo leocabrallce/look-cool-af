@@ -4,6 +4,7 @@ import { nanoid } from "nanoid";
 import Stack from "../../layout/Stack";
 import Label from "../Label/Label";
 import { HelperText } from "../HelperText/HelperText";
+import Required from "../Required/Required";
 
 type Props = {
   state: "default" | "critical" | "success" | "disabled";
@@ -13,6 +14,7 @@ type Props = {
   helperText?: string;
   placeholder?: string;
   resize?: 'none' | 'both' | 'horizontal' | 'vertical';
+  required?: boolean;
   // TODO: Icon variations for text area
   // iconLeft?: React.ReactNode;
   // iconRight?: React.ReactNode;
@@ -84,32 +86,6 @@ const StyledTextArea = styled('textarea', {
   },
 });
 
-const StyledLabel = styled('label', {
-  fontFamily: '$label',
-  fontSize: '$label',
-  lineHeight: '$label',
-  letterSpacing: '$label',
-  fontWeight: '$label',
-  color: '$textColorDefault',
-  hidden: false,
-  variants: {
-    state: {
-      default: {
-        color: '$textColorDefault',
-      },
-      critical: {
-        color: '$textColorDefault',
-      },
-      success: {
-        color: '$textColorDefault',
-      },
-      disabled: {
-        opacity: 0.6,
-      },
-    },
-  }
-});
-
 /**
  * An Text Area is a form element that lets users enter one of various types of text on a single or multiple lines.
  */
@@ -121,12 +97,13 @@ const TextArea = ({
   helperText = 'Helper text',
   placeholder = 'Placeholder',
   resize = 'vertical',
+  required = false,
 }: PropsWithChildren<Props>) => {
   const id = nanoid();
 
   return (
     <Stack direction="vertical" gap="1">
-      <Label htmlFor={id} ariaHidden={!showLabel} hidden={!showLabel} state={state}>
+      <Label htmlFor={id} ariaHidden={!showLabel} hidden={!showLabel} state={state} required={required}>
         {label}
       </Label>
       <StyledTextArea

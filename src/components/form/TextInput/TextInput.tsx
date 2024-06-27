@@ -4,6 +4,8 @@ import { nanoid } from "nanoid";
 import Stack from "../../layout/Stack";
 import Label from "../Label/Label";
 import { HelperText } from "../HelperText/HelperText";
+import Flex from "../../layout/Flex";
+import Required from "../Required/Required";
 
 type Props = {
   state: "default" | "critical" | "success" | "disabled";
@@ -13,6 +15,7 @@ type Props = {
   helperText?: string;
   placeholder?: string;
   type?: 'text' | 'password' | 'email' | 'number';
+  required?: boolean;
   // TODO: Icon variations for text input
   // iconLeft?: React.ReactNode;
   // iconRight?: React.ReactNode;
@@ -81,16 +84,18 @@ export const TextInput = ({
   helperText = 'Helper text',
   placeholder = 'Placeholder',
   type = 'text',
+  required = false,
 }: PropsWithChildren<Props>) => {
   const inputRef = useRef<HTMLInputElement>(null);
   const id = nanoid();
 
   return (
     <Stack direction="vertical" gap="1">
-      <Label htmlFor={id} ariaHidden={!showLabel} hidden={!showLabel} state={state}>
+      <Label htmlFor={id} ariaHidden={!showLabel} hidden={!showLabel} state={state} required={required}>
         {label}
       </Label>
       <StyledInput
+        required={required}
         ref={inputRef}
         id={id}
         type={type}
