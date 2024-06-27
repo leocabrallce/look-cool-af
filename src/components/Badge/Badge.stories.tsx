@@ -1,7 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 import Badge from './Badge';
 import Icon from '../icons/Icon';
-import { fn } from '@storybook/test';
 
 const BellIcon = () => <Icon type='BellIcon' size='small' />;
 
@@ -14,7 +13,6 @@ const meta = {
       exclude: ['icon', 'onClick'],
     }
   },
-  args: { onClick: fn() },
 } satisfies Meta<typeof Badge>;
 
 export default meta;

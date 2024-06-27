@@ -5,7 +5,6 @@ type Props = {
   label: string;
   type: 'primary' | 'inverse' | 'success' | 'critical' | 'warning';
   disabled?: boolean;
-  onClick?: () => void;
   iconPosition?: 'left' | 'right';
   icon?: React.ReactNode;
 };
@@ -62,9 +61,9 @@ const BadgeLayout = styled('div', {
   },
 });
 
-export const Badge = ({ label, onClick, icon, iconPosition, type, disabled }: Props) => {
+export const Badge = ({ label, icon, iconPosition, type, disabled }: Props) => {
   return (
-    <BadgeLayout onClick={onClick} type={type} iconPosition={iconPosition} disabled={disabled}>
+    <BadgeLayout type={type} iconPosition={iconPosition} disabled={disabled}>
       <Flex gap='2' align='center' justify='center'>
         {iconPosition === 'left' && icon}
         {label}
