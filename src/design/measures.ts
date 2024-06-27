@@ -154,9 +154,9 @@ const dimensionSpacing1200 = {
           css: "48px"
          };
 const dimensionSpacing1600 = {
-          measure: 64,
+          measure: 60,
           unit: "Pixels",
-          css: "64px"
+          css: "60px"
          };
 const dimensionSpacing2000 = {
           measure: 80,
@@ -273,6 +273,91 @@ const borderWidthDefault = {
           unit: "Pixels",
           css: "1px"
          };
+const dimensionSizes025 = {
+          measure: 1,
+          unit: "Pixels",
+          css: "1px"
+         };
+const dimensionSizes050 = {
+          measure: 2,
+          unit: "Pixels",
+          css: "2px"
+         };
+const dimensionSizes100 = {
+          measure: 4,
+          unit: "Pixels",
+          css: "4px"
+         };
+const dimensionSizes150 = {
+          measure: 6,
+          unit: "Pixels",
+          css: "6px"
+         };
+const dimensionSizes200 = {
+          measure: 8,
+          unit: "Pixels",
+          css: "8px"
+         };
+const dimensionSizes300 = {
+          measure: 12,
+          unit: "Pixels",
+          css: "12px"
+         };
+const dimensionSizes400 = {
+          measure: 16,
+          unit: "Pixels",
+          css: "16px"
+         };
+const dimensionSizes500 = {
+          measure: 20,
+          unit: "Pixels",
+          css: "20px"
+         };
+const dimensionSizes600 = {
+          measure: 24,
+          unit: "Pixels",
+          css: "24px"
+         };
+const dimensionSizes700 = {
+          measure: 28,
+          unit: "Pixels",
+          css: "28px"
+         };
+const dimensionSizes800 = {
+          measure: 32,
+          unit: "Pixels",
+          css: "32px"
+         };
+const dimensionSizes1000 = {
+          measure: 40,
+          unit: "Pixels",
+          css: "40px"
+         };
+const dimensionSizes1200 = {
+          measure: 48,
+          unit: "Pixels",
+          css: "48px"
+         };
+const dimensionSizes1600 = {
+          measure: 60,
+          unit: "Pixels",
+          css: "60px"
+         };
+const dimensionSizes2000 = {
+          measure: 80,
+          unit: "Pixels",
+          css: "80px"
+         };
+const dimensionSizes2400 = {
+          measure: 96,
+          unit: "Pixels",
+          css: "96px"
+         };
+const dimensionSizes3200 = {
+          measure: 128,
+          unit: "Pixels",
+          css: "128px"
+         };
 
 export const Measures = {
       dimensionFontTextSizeJumbo,
@@ -330,4 +415,21 @@ export const Measures = {
       borderRadius050,
       borderRadiusFull,
       borderWidthDefault,
+      dimensionSizes025,
+      dimensionSizes050,
+      dimensionSizes100,
+      dimensionSizes150,
+      dimensionSizes200,
+      dimensionSizes300,
+      dimensionSizes400,
+      dimensionSizes500,
+      dimensionSizes600,
+      dimensionSizes700,
+      dimensionSizes800,
+      dimensionSizes1000,
+      dimensionSizes1200,
+      dimensionSizes1600,
+      dimensionSizes2000,
+      dimensionSizes2400,
+      dimensionSizes3200,
 }
