@@ -9,9 +9,10 @@ type Props = {
   paddingLeft?: Spacing;
   paddingRight?: Spacing;
   fullWidth?: boolean;
+  sticky?: boolean;
 };
 
-export const Card = styled('div', {
+const StyledCard = styled('div', {
   backgroundColor: '$bgColorDefault',
   borderRadius: '$0',
   borderColor: '$borderColorDefault',
@@ -28,14 +29,21 @@ export const Card = styled('div', {
         width: '100%',
       },
     },
+    sticky: {
+      true: {
+        position: 'sticky',
+        top: 0,
+        zIndex: 1,
+      },
+    },
   },
 });
 
-export const CardComponent = ({ children, paddingTop, paddingBottom, paddingLeft, paddingRight }: PropsWithChildren<Props>) => {
+export const CardComponent = ({ children, paddingTop, paddingBottom, paddingLeft, paddingRight, sticky }: PropsWithChildren<Props>) => {
   return (
-    <Card paddingTop={paddingTop} paddingBottom={paddingBottom} paddingLeft={paddingLeft} paddingRight={paddingRight}>
+    <StyledCard paddingTop={paddingTop} paddingBottom={paddingBottom} paddingLeft={paddingLeft} paddingRight={paddingRight} sticky={sticky}>
       {children}
-    </Card>
+    </StyledCard>
   );
 };
 
