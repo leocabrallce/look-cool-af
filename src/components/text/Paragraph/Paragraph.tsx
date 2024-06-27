@@ -4,8 +4,8 @@ type Props = {
   children: string;
 };
 
-const Heading = ({ children }: Props) => {
+const Paragraph = ({ children }: Props) => {
   return <Text as="p" size="body">{children}</Text>;
 };
 
-export default Heading;
+export default Paragraph;

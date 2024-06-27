@@ -8,6 +8,7 @@ type Props = {
   paddingBottom?: Spacing;
   paddingLeft?: Spacing;
   paddingRight?: Spacing;
+  fullWidth?: boolean;
 };
 
 export const Card = styled('div', {
@@ -22,12 +23,17 @@ export const Card = styled('div', {
     paddingBottom: padding.bottom,
     paddingLeft: padding.left,
     paddingRight: padding.right,
+    fullWidth: {
+      true: {
+        width: '100%',
+      },
+    },
   },
 });
 
-export const CardComponent = ({ children, ...props }: PropsWithChildren<Props>) => {
+export const CardComponent = ({ children, paddingTop, paddingBottom, paddingLeft, paddingRight }: PropsWithChildren<Props>) => {
   return (
-    <Card {...props}>
+    <Card paddingTop={paddingTop} paddingBottom={paddingBottom} paddingLeft={paddingLeft} paddingRight={paddingRight}>
       {children}
     </Card>
   );

@@ -4,13 +4,12 @@ import { nanoid } from "nanoid";
 import Stack from "../../layout/Stack";
 import Label from "../Label/Label";
 import { HelperText } from "../HelperText/HelperText";
-import Flex from "../../layout/Flex";
-import Required from "../Required/Required";
 
 type Props = {
   state: "default" | "critical" | "success" | "disabled";
   showLabel?: boolean;
   showHelperText?: boolean;
+  helperTextAnchor?: string;
   label?: string;
   helperText?: string;
   placeholder?: string;
@@ -77,12 +76,12 @@ const StyledInput = styled('input', {
  * An Input is a form element that lets users enter one of various types of text on a single line.
  */
 export const TextInput = ({
+  label,
+  helperText,
+  placeholder,
   state = 'default',
   showLabel = true,
   showHelperText = true,
-  label = 'Label',
-  helperText = 'Helper text',
-  placeholder = 'Placeholder',
   type = 'text',
   required = false,
 }: PropsWithChildren<Props>) => {
