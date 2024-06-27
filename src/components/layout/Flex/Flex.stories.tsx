@@ -19,7 +19,7 @@ type Story = StoryObj<typeof meta>;
 
 const boxes = (
   <>
-    <Box size="full" />
+    <Box size="small" />
     <Box size="small" />
     <Box size="small" />
   </>
